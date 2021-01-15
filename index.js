@@ -1,6 +1,7 @@
-import { fetchMyIP } from './iss';
-import { fetchCoordsByIP } from './iss';
 
+
+const { fetchMyIP } = require('./iss');
+const { fetchCoordsByIP } = require('./iss');
 // const  { fetchMyIP }  = require('./iss');
 let IP;///to be taken from fetchMyIPlog() and to be passed to fetchCoordsbyIPlog.
 
@@ -31,4 +32,4 @@ fetchCoordsByIP( IP, (error, coords) => {
 
 
 // eslint-disable-next-line no-undef
-export default { fetchMyIP };
+module.exports = { fetchMyIP };

@@ -1,4 +1,4 @@
-import request from 'request';
+const request = require('request');
 
 
 const fetchMyIP = function(callback) {
@@ -39,6 +39,6 @@ const fetchCoordsByIP = (ip, callback) =>{
   })
 };
 
-export default { fetchMyIP,fetchCoordsByIP }; 
+module.exports = { fetchMyIP,fetchCoordsByIP }; 
   
   
